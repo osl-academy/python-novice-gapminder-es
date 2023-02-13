@@ -1,6 +1,7 @@
 name: release
 
 on:
+  workflow_dispatch:
   push:
     branches: [ master ]
   pull_request:
@@ -36,7 +37,7 @@ jobs:
       run: make site
 
     - name: GitHub Pages action
-      if: ${{ github.event_name == 'push' }}
+      if: ${{ github.event_name != 'pull_request' }}
       uses: peaceiris/actions-gh-pages@v3.5.9
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
