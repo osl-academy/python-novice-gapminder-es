@@ -1,0 +1,9 @@
+name: swc-python-novice-gapminder-es
+channels:
+  - nodefaults
+  - conda-forge
+dependencies:
+  - rb-jekyll
+  - rb-kramdown >=2.1.0,<2.2
+  - rb-kramdown-parser-gfm
+  - python=3.9
