@@ -1,5 +1,5 @@
 ---
-title: Figuras
+title: Figures
 ---
 
 {% include base_path.html %}
@@ -66,4 +66,3 @@ Create anchor for each one of the episodes.
 {% endfor %}
 
 {% include links.md %}
-

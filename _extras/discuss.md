@@ -1,7 +1,4 @@
 ---
-layout: page
-title: "Discusión"
-permalink: /es/discuss/
+title: "Discussion"
 ---
-FIXME: discusión general y lecturas adicionales para aprendices.
-
+FIXME: general discussion and further reading for learners.

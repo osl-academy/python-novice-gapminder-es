@@ -1,7 +1,4 @@
 ---
-layout: page
-title: "Ejercicios adicionales"
-permalink: /es/exercises/
+title: "Further Exercises"
 ---
-FIXME: ejercicios que no tienen cabida en el programa regular.
-
+FIXME: exercises that don't fit into the regular schedule.

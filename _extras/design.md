@@ -1,358 +1,355 @@
 ---
-layout: page
-title: "Diseño de la lección"
-permalink: /es/design/
-root: /es/_episodes/
+title: "Lesson Design"
 ---
 
-> ## Se busca ayuda
+> ## Help Wanted
 > {:.no_toc}
 >
-> **Estamos completando los ejercicios [a continuación](#etapa-3-plan-de-aprendizaje)
-> para hacer que el plan de la lección sea más concreto.
-> Las contribuciones (tanto en forma de *pull request* con ejercicios completados,
-> y comentarios sobre ejercicios específicos, orden y horarios) son muy apreciadas.**
+> **We are filling in the exercises [below](#stage-3-learning-plan)
+> in order to make the lesson plan more concrete.
+> Contributions (both in the form of pull requests with filled-in exercises,
+> and comments on specific exercises, ordering, and timings) are greatly appreciated.**
 {: .callout}
 
-## Proceso utilizado
+## Process Used
 
-> El consejo de Michael Pollan si él enseñara programación en R o Python:
+> Michael Pollan's advice if he taught R or Python programming:
 >
-> 1. Escribir código.
-> 2. No demasiado.
-> 3. Principalmente gráficos.
+> 1. Write code.
+> 2. Not too much.
+> 3. Mostly plots.
 >
-> - [Michael Koontz](https://twitter.com/_mikoontz/status/758021742078025728)
+> — [Michael Koontz](https://twitter.com/_mikoontz/status/758021742078025728)
 {: .quotation}
 
-Esta lección fue desarrollada usando una variante reducida del proceso "Comprensión por diseño".
-Las secciones principales son:
+This lesson was developed using a slimmed-down variant of the "Understanding by Design" process.
+The main sections are:
 
-1. Suposiciones sobre la audiencia, tiempo, etc.
-(El borrador actual también incluye algunas conclusiones y decisiones en
-esta sección, que deben ser consideradas).
+1.  Assumptions about audience, time, etc.
+    (The current draft also includes some conclusions and decisions in this
+    section - that should be refactored.)
 
-2.   Resultados deseados:
-    objetivos generales, evaluaciones sumativas al medio día, lo que las estudiantes podrán hacer, lo que las estudiantes aprenderán.
+2.  Desired results:
+    overall goals, summative assessments at half-day granularity, what learners
+    will be able to do, what learners will know.
 
-3. Plan de aprendizaje:
-cada episodio tiene un encabezado que resume lo que se cubrirá,
-luego el tiempo estimado que se dedicará a la enseñanza y a los ejercicios,
-mientras que los ejercicios se muestran en puntos.
+3.  Learning plan:
+    each episode has a heading that summarizes what will be covered,
+    then estimates time that will be spent on teaching and on exercises,
+    while the exercises are given as bullet points.
 
-## Etapa 1: Suposiciones
+## Stage 1: Assumptions
 
-* Audiencia
-    *   Estudiantes de postgrado de varias disciplinas desde astronomía hasta zoología.
-    *   Personas que hayan manejado datos en planillas de cálculo y herramientas interactivas como SAS
-    *   Personas que *no* han programado más allá de CPD (copiar-pegar-desesperarse)
-*   Restricciones
-    *   Un día completo de 09:00-16:30
-        *   06:15 horas de clase
-        *   0:45 almuerzo
-        *   0:30 tiempo total para dos pausas
-    *   Las estudiantes usan herramientas intaladas en sus propias máquinas
-        *   Pueden usar VMs o recursos en la nube si la instructora lo decide
-        *   Deben tener una instalación local como opción
-    *   No depende de otros módulos de las Carpentries
-        *   Particularmente, no requiere conocimiento de la línea de comandos o sistemas de control de versiones
-    *   Usa Jupyter Notebooks
-        *   La herramienta es usada por muchos instructores
-        *   No hay alguna alternativa
-        *   Y significa que incluso las personas que hayan visto algo de Python con anterioridad
-               probablemente aprenderán algo
-* Ejemplo motivador
-    * Creación de gráficos en 2D adecuados para su inclusión en publicaciones
-    * Motiva a casi todos
-    * Hace que la lección sea utilizable por ambas Carpentries
-        * Y significa que incluso las personas que han visto un poco de Python antes
-           probablemente aprenderá algo
-* Datos
-    * Utiliza los datos de gapminder en la lección
-    * Dividido en múltiples archivos por continente
-    * Hacer que la salida de los ejemplos sea más ordenada
-      (por ejemplo, usar Australia/New Zealand, que son sólo dos líneas)
-    * Y permite ejemplos que muestran el uso de múltiples conjuntos de datos
-* Céntrarse en **Pandas** en lugar de NumPy
-    * Hace que la lección sea utilizable tanto por Software Carpentry y Data Carpentry
-    * Es probable que los principiantes deseen una demostración de análisis de datos
-    * Y personas con alguna experiencia previa:
-        * aceptarán el análisis de datos como una tarea auténtica,
-        * y es poco probable que hayan utilizado Pandas,
-          entonces ellos también tendrán algo útil de la lección
-* Los desafíos en su mayoría *no* serán "escribir este código desde cero"
-    * Se desea que haya muchos ejercicios cortos que se pueden terminar en el tiempo asignado
-    * Utiliza MCQ (preguntas de selección múltiple), rellenar los espacios en blanco, problemas de Parsons, "modifique este código", etc.
+*   Audience
+    *   Graduate students in numerate disciplines from cosmology to archaeology
+    *   Who have manipulated data in spreadsheets and with interactive tools like SAS
+    *   But have *not* programmed beyond CPD (copy-paste-despair)
+*   Constraints
+    *   One full day 09:00-16:30
+        *   06:15 class time
+        *   0:45 lunch
+        *   0:30 total for two coffee breaks
+    *   Learners use native installs on their own machines
+        *   May use VMs or cloud resources at instructor's discretion
+        *   But must keep native local install as an option
+    *   No dependence on other Carpentry modules
+        *   In particular, does not require knowledge of shell or version control
+    *   Use the Jupyter Notebook
+        *   Authentic tool used by many instructors
+        *   There isn't really an alternative
+        *   And means that even people who have seen a bit of Python before
+            will probably learn something
+*   Motivating Example
+    *   Creating 2D plots suitable for inclusion in papers
+    *   Appeals to almost everyone
+    *   Makes lesson usable by both Carpentries
+        *   And means that even people who have seen a bit of Python before
+            will probably learn something
+*   Data
+    *   Use the gapminder data throughout
+    *   But break into multiple files by continent
+        *   To make display of output from examples tidier
+            (e.g., use Australia/New Zealand, which is only two lines)
+        *   And allow examples showing use of multiple data sets
+*   Focus on Pandas instead of NumPy
+    *   Makes lesson usable by both Data Carpentry and Software Carpentry
+    *   Genuine novices are likely to want data analysis
+    *   And people with some prior experience:
+        *   will accept data analysis as an authentic task,
+        *   and are unlikely to have encountered Pandas,
+            so they'll still get something useful out of the lesson
+*   Challenges will mostly *not* be "write this code from scratch"
+    *   Want lots of short exercises that can reliably be finished in allotted time
+    *   So use MCQs, fill-in-the-blanks, Parsons Problems, "tweak this code", etc.
 
-## Etapa 2: Resultados deseados
+## Stage 2: Desired Results
 
-### Preguntas
+### Questions
 
-¿Cómo puedo...
+How do I...
 
-*   ...leer datos tabulares?
-*   ...graficar un vector de valores?
-*   ...crear una gráfica de series de tiempo?
-*   ...crear una gráfica para cada conjunto de datos?
-*   ...extraer datos de un conjunto de datos para graficar?
-*   ...escribir programas que pueda leer y reutilizar en el futuro?
+*   ...read tabular data?
+*   ...plot a single vector of values?
+*   ...create a time series plot?
+*   ...create one plot for each of several data sets?
+*   ...get extra data from a single data set for plotting?
+*   ...write programs I can read and re-use in future?
 
-### Habilidades
+### Skills
 
-Yo puedo...
+I can...
 
-*   ...escribir scripts cortos usando bucles y condicionales.
-*   ...escribir funciones con un número fijo de parámetros que retornan un resultado.
-*   ...importar bibliotecas usando aliases y refererenciar al contenido de la biblioteca.
-*   ...hacer extracciones de datos simples y formatear datos usando Pandas.
+*   ...write short scripts using loops and conditionals.
+*   ...write functions with a fixed number of parameters that return a single result.
+*   ...import libraries using aliases and refer to those libraries' contents.
+*   ...do simple data extraction and formatting using Pandas.
 
-### Conceptos
+### Concepts
 
-Yo sé...
+I know...
 
-*   ...que un programa es una herramienta para el análisis de datos
-    *   Necesita ser validado/calibrado antes/durante el uso
-    *   Hace los análisis reproducibles, revisables, compartibles
-*   ...que los programas son escritos para personas no para computadoras
-    *   Usar nombres de variable significativos
-    *   Usar modularidad para legibilidad y reutilización
-    *   Evitar duplicación
-    *   Documentar el propósito y el uso
-*   ...que no hay resultados mágicos y que los programas que usan no son diferentes
-de los que ellas hacen
-* ... cómo asignar valores a las variables
-* ... que son números enteros, flotantes, cadenas, arreglos en NumPy y dataframes de Pandas
-* ... cómo rastrear la ejecución de un bucle `for`
-* ... cómo rastrear la ejecución de sentencias `if` /` else`
-* ... cómo crear e indexar listas
-* ... cómo crear e indexar arreglos de NumPy
-* ... cómo crear e indexar dataframes en Pandas
-* ... cómo crear gráficas de series de tiempo
-* ... la diferencia entre definir y llamar a una función
-* ... dónde encontrar documentación sobre bibliotecas estándar
-* ... cómo averiguar qué más ofrece Python científico
+*   ...that a program is a piece of lab equipment that implements an analysis
+    *   Needs to be validated/calibrated before/during use
+    *   Makes analysis reproducible, reviewable, shareable
+*   ...that programs are written for people, not for computers
+    *   Meaningful variable names
+    *   Modularity for readability as well as re-use
+    *   No duplication
+    *   Document purpose and use
+*   ...that there is no magic: the programs they use are no different
+    in principle from those they build
+*   ...how to assign values to variables
+*   ...what integers, floats, strings, NumPy arrays, and Pandas dataframes are
+*   ...how to trace the execution of a `for` loop
+*   ...how to trace the execution of `if`/`else` statements
+*   ...how to create and index lists
+*   ...how to create and index NumPy arrays
+*   ...how to create and index Pandas dataframes
+*   ...how to create time series plots
+*   ...the difference between defining and calling a function
+*   ...where to find documentation on standard libraries
+*   ...how to find out what else scientific Python offers
 
-## Etapa 3: Plan de aprendizaje
+## Stage 3: Learning Plan
 
-### Evaluación sumativa
+### Summative Assessment
 
-*   A la mitad de la lección: crear una gráfica de series de tiempo por cada archivo de datos en una carpeta
-*   Final: extraer datos de un DataFrame de Pandas
-    y  crear gráficas de series de tiempo comparables de varias líneas
+*   Midpoint: create time-series plot for each file in a directory.
+*   Final: extract data from Pandas dataframe
+    and create comparative multi-line time series plot.
 
-### [Correr y salir interactivamente]({{page.root}}/01-run-quit/) (9:00)
+### [Running and Quitting Interactively]({{page.root}}/01-run-quit/) (9:00)
 
-*   Enseñanza: 15 min (debido a problemas de configuración)
-    *    Iniciar Jupyter Notebooks, crear nuevos cuadernos y salir de Notebook.
-    *   Crear celdas de Markdown en un cuaderno.
-    *   Crear y correr celdas de Python en un cuaderno.
-*   Desafíos: 0 min (contando el tiempo de enseñanza - sin ejercicios separados)
-    *   Crear listas en Markdown
-    *   ¿Qué se muestra cuando varias expresiones se escriben en una celda?
-    *   Cambiar el tipo de una celda existente de código a Markdown
-    *   Formatear ecuaciones estilo LaTeX
+*   Teaching: 15 min (because setup issues)
+    *   Launch the Jupyter Notebook, create new notebooks, and exit the Notebook.
+    *   Create Markdown cells in a notebook.
+    *   Create and run Python cells in a notebook.
+*   Challenges: 0 min (accounted for in teaching time - no separate exercise)
+    *   Creating lists in Markdown
+    *   What is displayed when several expressions are put in a single cell?
+    *   Change an existing cell from code to Markdown
+    *   Rendering LaTeX-style equations
 
-### [Variables y Asignaciones]({{page.root}}/02-variables/) (9:15)
+### [Variables and Assignment]({{page.root}}/02-variables/) (9:15)
 
-*   Enseñanza: 10 min
-    *   Escribir programas que asignan valores escalares a variables y hacen cálculos con esos valores.
-    *   Rastrear cambios en los programas que usan asignaciones de escalares.
-*   Desafíos: 10 min
-    *   Rastrear la ejecución de intercambio de código de dos valores usando variables intermedias.
-    *   Predecir el valor final de una variable después de varias asignaciones.
-    *   ¿Qué pasa si tratas de indexar un número?
-    *   ¿Qué nombre es mejor para una variable `m`, `min`, o `minutos`?
-    *   ¿Qué producen los siguentes cortes?
+*   Teaching: 10 min
+    *   Write programs that assign scalar values to variables and perform calculations with those values.
+    *   Correctly trace value changes in programs that use scalar assignment.
+*   Challenges: 10 min
+    *   Trace execution of code swapping two values using an intermediate variable.
+    *   Predict final values of variables after several assignments.
+    *   What happens if you try to index a number?
+    *   Which is a better variable name, `m`, `min`, or `minutes`?
+    *   What do the following slice expressions produce?
 
-### [Tipos de Datos y Conversión de tipo de datos]({{page.root}}/03-types-conversion/) (09:35)
+### [Data Types and Type Conversion]({{page.root}}/03-types-conversion/) (09:35)
 
-*   Enseñanza: 10 min
-    *   Explicar la diferencia entre los enteros y los números de punto flotante.
-    *   Explicar la diferencia entre números y las cadenas de caracteres.
-    *   Usar funciones incorporadas para convertir enteros, números de punto flotante y secuencias de caracteres.
-*   Desafíos: 10 min
-    *   ¿Qué tipo de dato es 3.4?
-    *   ¿Qué tipo de dato es 3.25 + 4?
-    *   ¿Qué tipo de dato usarías para representar:
-        *   Número de días desde el inicio del año?
-        *   El tiempo que ha pasado desde el inicio del año?
+*   Teaching: 10 min
+    *   Explain key differences between integers and floating point numbers.
+    *   Explain key differences between numbers and character strings.
+    *   Use built-in functions to convert between integers, floating point numbers, and strings.
+*   Challenges: 10 min
+    *   What type of value is 3.4?
+    *   What type of value is 3.25 + 4?
+    *   What type of value would you use to represent:
+        *   Number of days since the start of the year.
+        *   Time elapsed since the start of the year.
         *   Etc.
-    *   ¿Cómo puedes usar `//` (división de enteros) y `%` (módulo)?
-    *   ¿Qué hace `int("3.4")`?
-    *   Dados estos números de punto flotante, enteros, y secuencias de caracteres, ¿qué expresiones mostrarán un resultado en particular?
-    *   ¿Qué esperas que `1+2j + 3` produzca?
+    *   How can you use `//` (integer division) and `%` (modulo)?
+    *   What does `int("3.4")` do?
+    *   Given these float, int, and string values, which expressions will print a particular result?
+    *   What do you expect `1+2j + 3` to produce?
 
-### [Funciones incorporadas y ayuda]({{page.root}}/04-built-in/) (09:55)
+### [Built-in Functions and Help]({{page.root}}/04-built-in/) (09:55)
 
-*   Enseñanza: 15 min
-    *   Explicar el propósito de las funciones.
-    *   Llamar correctamente las funciones incorporadas de Python.
-    *   Anidar correctamente las llamadas a las funciones incorporadas.
-    *   Usar la ayuda para mostras documentación de las funciones incorporadas.
-    *   Describe correctamente situaciones en las que ocurren **SyntaxError** y **NameError**.
-*   Desafíos: 10 min
-    *   Explica el orden de las operaciones en la siguiente expresión compleja.
-    *    ¿Qué producirá cada combinación anidada de llamadas `min` y `max`?
-    *   ¿Por qué `max` y `min` no devuelven `None` cuando no se presentan argumentos?
-    *   Dado lo que hemos visto hasta ahora,
-         ¿Qué expresión de índice obtendrá el último carácter en una secuencia de caracteres?
+*   Teaching: 15 min
+    *   Explain the purpose of functions.
+    *   Correctly call built-in Python functions.
+    *   Correctly nest calls to built-in functions.
+    *   Use help to display documentation for built-in functions.
+    *   Correctly describe situations in which SyntaxError and NameError occur.
+*   Challenges: 10 min
+    *   Explain the order of operations in the following complex expression.
+    *   What will each nested combination of `min` and `max` calls produce?
+    *   Why don't `max` and `min` return `None` when given no arguments?
+    *   Given what we have seen so far,
+        what index expression will get the last character in a string?
 
-### [Café]({{page.root}}/05-coffee/): 15 min (10:20)
+### [Coffee]({{page.root}}/05-coffee/): 15 min (10:20)
 
-### [Bibliotecas]({{page.root}}/06-libraries/) (10:35)
+### [Libraries]({{page.root}}/06-libraries/) (10:35)
 
-*   Enseñanza: 10 min
-    *   Explica qué son las bibliotecas de software y por qué los programadores las crean y usan.
-    *   Escribe programas que importen y usen bibliotecas de la biblioteca estándar de Python.
-    *   Busca y lee la documentación para bibliotecas estándar de forma interactiva (en el intérprete) y en línea.
-*   Desafíos: 10 min
-    *   ¿Qué función de la biblioteca matemática estándar podrías usar para calcular una raíz cuadrada?
-    *   ¿Qué biblioteca usarías para seleccionar un valor aleatorio de los datos?
-    *   Si `help(math)` produce un error, ¿qué has olvidado hacer?
-    *  Completa los espacios en blanco en el código a continuación para que la importación y el programa se ejecuten.
+*   Teaching: 10 min
+    *   Explain what software libraries are and why programmers create and use them.
+    *   Write programs that import and use libraries from Python's standard library.
+    *   Find and read documentation for standard libraries interactively (in the interpreter) and online.
+*   Challenges: 10 min
+    *   Which function from the standard math library could you use to calculate a square root?
+    *   What library would you use to select a random value from data?
+    *   If `help(math)` produces an error, what have you forgotten to do?
+    *   Fill in the blanks in code below so that the import statement and program run.
 
-### [Lectura de Datos Tabulados]({{page.root}}/07-reading-tabular/) (10:55)
+### [Reading Tabular Data]({{page.root}}/07-reading-tabular/) (10:55)
 
-*   Enseñanza: 10 min
-    *   Importar la biblioteca Pandas.
-    *   Usar Pandas para cargar un conjunto de datos CSV simple.
-    *   Obtener información básica sobre un DataFrame de Pandas.
-*   Desafíos: 10 min
-    *   Leer los datos de las Américas y mostrar sus estadísticas resumidas.
-    *   ¿Qué hacen `.head` y `.tail`?
-    *  ¿Qué secuencia de caracteres debes pasar a `read_csv` para leer archivos de otros directorios?
-    *   ¿Cómo puedes *escribir* datos CSV?
+*   Teaching: 10 min
+    *   Import the Pandas library.
+    *   Use Pandas to load a simple CSV data set.
+    *   Get some basic information about a Pandas DataFrame.
+*   Challenges: 10 min
+    *   Read the data for the Americas and display its summary statistics.
+    *   What do `.head` and `.tail` do?
+    *   What string(s) should you pass to `read_csv` to read files from other directories?
+    *   How can you *write* CSV data?
 
 ### [DataFrames]({{page.root}}/08-data-frames/) (11:15)
 
-*   Enseñanza: 15 min
-    *   Seleccionar valores individuales de un dataframe de Pandas.
-    *   Seleccionar filas o columnas enteras de un dataframe.
-    *   Seleccionar un subconjunto de filas y columnas de un dataframe en una sola operación.
-    *   Seleccionar un subconjunto de un dataframe por un único criterio booleano.
-*   Desafíos: 15 min.
-    *   Escribir una expresión para encontrar el PIB per cápita de Serbia en 2007.
-    *   ¿Qué regla rige lo que se incluye (o no) en cortes numéricos y con nombre en Pandas?
-    *   ¿Qué hace cada línea en el siguiente programa corto?
-    *  ¿Qué hacen `idxmin` e `idxmax`?
-    *   Escriba expresiones para obtener el PIB per cápita para todos los países en 1982,
-    para todos los países *después de* 1985,
-    etc.
-    * Dada la forma en que sus fronteras han cambiado desde 1900,
-    ¿Qué harías si te pidieran crear una tabla de PIB per cápita para Polonia?
-    para el siglo veinte?
+*   Teaching: 15 min
+    *   Select individual values from a Pandas dataframe.
+    *   Select entire rows or entire columns from a dataframe.
+    *   Select a subset of both rows and columns from a dataframe in a single operation.
+    *   Select a subset of a dataframe by a single Boolean criterion.
+*   Challenges: 15 min
+    *   Write an expression to find the Per Capita GDP of Serbia in 2007.
+    *   What rule governs what is (or isn't) included in numerical and named slices in Pandas?
+    *   What does each line in the following short program do?
+    *   What do `idxmin` and `idxmax` do?
+    *   Write expressions to get the GDP per capita for all countries in 1982,
+        for all countries *after* 1985,
+        etc.
+    *   Given the way its borders have changed since 1900,
+        what would you do if asked to create a table of GDP per capita for Poland
+        for the Twentieth Century?
 
-### [Graficación]({{page.root}}/09-plotting/) (11:45)
+### [Plotting]({{page.root}}/09-plotting/) (11:45)
 
-*   Enseñanza: 15 min
-    *   Cree un gráfico de series de tiempo que muestre un único conjunto de datos.
-    *   Cree un gráfico de dispersión que muestre la relación entre dos conjuntos de datos.
-*   Ejercicio: 15 min.
-    *   Complete los espacios en blanco para graficar el PIB mínimo per cápita a lo largo del tiempo para los países europeos.
-    *   Modifique el ejemplo para crear un gráfico de dispersión del PIB per cápita en los países asiáticos.
-    *   Explique qué hace cada argumento de `plot` en el siguiente ejemplo.
+*   Teaching: 15 min
+    *   Create a time series plot showing a single data set.
+    *   Create a scatter plot showing relationship between two data sets.
+*   Exercise: 15 min
+    *   Fill in the blanks to plot the minimum GDP per capita over time for European countries.
+    *   Modify the example to create a scatter plot of GDP per capita in Asian countries.
+    *   Explain what each argument to `plot` does in the following example.
 
-### [Almuerzo]({{page.root}}/10-lunch/) (12:15): 45 min
+### [Lunch]({{page.root}}/10-lunch/) (12:15): 45 min
 
-### [Listas]({{page.root}}/11-lists/) (13:00)
+### [Lists]({{page.root}}/11-lists/) (13:00)
 
-*   Enseñanza: 10 min
-    *   Explique por qué los programas necesitan colecciones de valores.
-    *   Escriba programas que creen listas planas, indexe, fraccione y modifique mediante asignaciones y llamadas a métodos.
-*   Desafíos: 10 min
-    *  Complete los espacios en blanco para que el programa produzca el resultado que se muestra.
-    *   ¿Cuán grandes son los siguientes cortes?
-    *   ¿Qué imprimen las expresiones de índice negativo?
-    *   ¿Qué hace `stride` en un corte?
-    *   ¿Cómo se manejan los límites de rango en los cortes?
-    *   ¿Cuál es la diferencia en ordenar usando estas dos maneras?
-    *   ¿Cuál es la diferencia entre `nuevo = viejo` y `nuevo = viejo[:]`?
+*   Teaching: 10 min
+    *   Explain why programs need collections of values.
+    *   Write programs that create flat lists, index them, slice them, and modify them through assignment and method calls.
+*   Challenges: 10 min
+    *   Fill in the blanks so that the program produces the output shown.
+    *   How large are the following slices?
+    *   What do negative index expressions print?
+    *   What does a "stride" in a slice do?
+    *   How do slices treat out-of-range bounds?
+    *   What are the differences between sorting these two ways?
+    *   What is the difference between `new = old` and `new = old[:]`?
 
-### [Bucles]({{page.root}}/12-for-loops/) (13:20)
+### [Loops]({{page.root}}/12-for-loops/) (13:20)
 
-*   Enseñanza: 10 min
-    *   Explicar para que son usados los bucles.
-    *   Rastrear la ejecución de un bucle simple (no anidado) y correctamente indicar el estado de los valores de cada variable en cada interación.
-    *   Escribir bucles que usan un patrón acumulador para agregar valores.
-*   Desafíos: 15 min.
-    *   ¿Un error de indentación es un error de syntax o runtime?
-    *   Rastrear que líneas del programa son ejecutadas y en qué orden.
-    *   Llenar los espacios en blanco en este program para invertir la secuencia de caracteres.
-    *   Llenar los espacios en blanco en estos ejemplos para ganar práctica en valores acumulados.
-    *   Reordenar e indentar estas líneas para calcular la suma cumulativa de los valores de la lista.
+*   Teaching: 10 min
+    *   Explain what for loops are normally used for.
+    *   Trace the execution of a simple (unnested) loop and correctly state the values of variables in each iteration.
+    *   Write for loops that use the Accumulator pattern to aggregate values.
+*   Challenges: 15 min
+    *   Is an indentation error a syntax error or a runtime error?
+    *   Trace which lines of this program are executed in what order.
+    *   Fill in the blanks in this program so that it reverses a string.
+    *   Fill in the blanks in this series of examples to get practice accumulating values.
+    *   Reorder and indent these lines to calculate the cumulative sum of the list values.
 
-### [Iterando Sobre Datos]({{page.root}}/13-looping-data-sets/) (13:45)
+### [Looping Over Data Sets]({{page.root}}/13-looping-data-sets/) (13:45)
 
-*   Desafíos: 15 min.
-    *   Ser capaz de leer y escribir expresiones **glob** que encuentren un conjunto de archivos.
-    *   Usar `glob` para crear listas de archivos.
-    *   Escribir bucles para realizar operaciones en archivos, dada una lista con sus nombres.
-*   Desafíos: 10 min
-    *  ¿Qué archivos no se encuentran con una expresión **glob**?
-    *   Modificar este programa para mostrar el número de filas en el archivo más pequeño.
-    *   Escribir un programa que lea y visualice todos los datos regionales.
+*   Teaching: 5 min
+    *   Be able to read and write globbing expressions that match sets of files.
+    *   Use glob to create lists of files.
+    *   Write for loops to perform operations on files given their names in a list.
+*   Challenges: 10 min
+    *   Which filenames are *not* matched by this glob expression?
+    *   Modify this program so that it prints the number of records in the shortest file.
+    *   Write a program that reads and plots all of the regional data sets.
 
-### [Escribiendo Funciones]({{page.root}}/14-writing-functions/) (14:00)
+### [Writing Functions]({{page.root}}/14-writing-functions/) (14:00)
 
-*   Enseñanza: 10 min
-    *   Explicar e identificar la diferencia entre definir y llamar una función.
-    *   Escribir una función que recibe un número definido de argumentos y produce un resultado.
-*   Desafíos: 15 min.
-    *   Este código define y llama a una función - ¿Qué muestra cuando se ejecuta?
-    *   Explicar por que este programa muestra cosas en un orden particular.
-    *   Llenar los espacios en blanco para crear una función que encuentra el valor mínimo en un archivo de datos.
-    *   Llenar los espacios en blanco para crear una función que encuentre el primer valor negativo en una lista.
-        ¿Qué hace la función si la lista está vacía?
-    *   ¿Porqué es importante pasar argumentos nombrando los parámetros correspondientes?
-    *   Llena los espacios en blanco y convierte este código en una función.
+*   Teaching: 10 min
+    *   Explain and identify the difference between function definition and function call.
+    *   Write a function that takes a small, fixed number of arguments and produces a single result.
+*   Challenges: 15 min
+    *   This code defines and calls a function - what does it print when run?
+    *   Explain why this short program prints things in the order it does.
+    *   Fill in the blanks to create a function that finds the minimum value in a data file.
+    *   Fill in the blanks to create a function that finds the first negative value in a list.
+        What does your function do if the list is empty?
+    *   Why is it sometimes useful to pass arguments by naming the corresponding parameters?
+    *   Fill in the blanks and turn this short piece of code into a function.
 
-### [Alcance de una variable]({{page.root}}/15-scope/) (14:25)
+### [Variable Scope]({{page.root}}/15-scope/) (14:25)
 
-*   Enseñanza: 10 min
-    *   Identificar variables locales y globales.
-    *   Identificar parámetros como variables locales.
-    *   Leer un rastreo y determinar el archivo, la función y el número de línea donde el error ha ocurrido.
-*   Desafíos: 10 min
-    *   Rastrear los cambios de valores en el programa,
-        siendo cuidadosa en distinguir valores locales de globales.
+*   Teaching: 10 min
+    *   Identify local and global variables.
+    *   Identify parameters as local variables.
+    *   Read a traceback and determine the file, function, and line number on which the error occurred.
+*   Challenges: 10 min
+    *   Trace the changes to the values in this program,
+        being careful to distinguish local from global values.
 
-### [Café]({{page.root}}/16-coffee/) (14:45): 15 min
+### [Coffee]({{page.root}}/16-coffee/) (14:45): 15 min
 
-### [Condicionales]({{page.root}}/17-conditionals/) (15:00)
+### [Conditionals]({{page.root}}/17-conditionals/) (15:00)
 
-*   Enseñanza: 10 min
-    *   Escribir correctamente programas que usan declaraciones if y else y expresiones booleanas (sin operadores lógicos).
-    *   Rastrear la ejecución de condicionales no anidados y condicionales dentro de bucles.
-*   Desafíos: 15 min.
-    *   Rastrear la ejecución de esta declaración condicional.
-    *   Llena los espacios en blanco para que esta función remplace los valores negativos por ceros.
-    *   Modifica este programa para que sólo procese archivos de menos de 50 registros.
-    *   Modifica este programa para que siempre encuentre el valor máximo y mínimo en una lista
-        sin importar los valores en la lista.
+*   Teaching: 10 min
+    *   Correctly write programs that use if and else statements and simple Boolean expressions (without logical operators).
+    *   Trace the execution of unnested conditionals and conditionals inside loops.
+*   Challenges: 15 min
+    *   Trace the execution of this conditional statement.
+    *   Fill in the blanks so that this function replaces negative values with zeroes.
+    *   Modify this program so that it only processes files with fewer than 50 records.
+    *   Modify this program so that it always finds the largest and smallest values in a list
+        no matter what the list's values are.
 
-### [Estilo de Programación]({{page.root}}/18-style/) (15:25)
+### [Programming Style]({{page.root}}/18-style/) (15:25)
 
-*   Enseñanza: 15 min
-    *   ¿Cómo puedo hacer mis programas más legibles?
-    *   ¿Cómo formatean su código la mayoría de los programadores?
-    *  ¿Cómo pueden los programas revisar sus operaciones?
-*   Desafíos: 15 min.
-    *   ¿Qué líneas en este código estarán disponibles como ayuda online?
-    *   Convertir los comentarios de un programa en docstrings.
-    *   Reescribir este pequeño programa para que sea más fácil de leer.
+*   Teaching: 15 min
+    *   How can I make my programs more readable?
+    *   How do most programmers format their code?
+    *   How can programs check their own operation?
+*   Challenges: 15 min
+    *   Which lines in this code will be available as online help?
+    *   Turn the comments in this program into docstrings.
+    *   Rewrite this short program to be more readable.
 
-### [Cerrar]({{page.root}}/19-wrap/) (15:55)
+### [Wrap-Up]({{page.root}}/19-wrap/) (15:55)
 
-*   Enseñanza: 20 min
-    *   Nombrar y localizar sitios web de la comunidad científica de Python para software, talleres, y ayuda.
-*   Desafíos: 0 min
-    *   Ninguno.
+*   Teaching: 20 min
+    *   Name and locate scientific Python community sites for software, workshops, and help.
+*   Challenges: 0 min
+    *   None.
 
-### [Retroalimentación]({{page.root}}/20-feedback/) (16:15)
+### [Feedback]({{page.root}}/20-feedback/) (16:15)
 
-*   Enseñanza: 0 min
-*   Desafíos: 15 min.
-    *   Recopilar comentarios
+*   Teaching: 0 min
+*   Challenges: 15 min
+    *   Collect feedback
 
-### Fin (16:30)
-
+### Finish (16:30)

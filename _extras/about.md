@@ -1,7 +1,4 @@
 ---
-layout: page
-title: Sobre las Carpentries
-permalink: /es/about/
+title: About
 ---
 {% include carpentries.html %}
-
